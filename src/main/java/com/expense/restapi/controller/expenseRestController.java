@@ -6,6 +6,7 @@ import com.expense.restapi.service.expenseService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,6 +17,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 //use for logging error in your code
 @Slf4j
+@CrossOrigin("*")
 public class expenseRestController {
 
     private final expenseService expenseService ;
